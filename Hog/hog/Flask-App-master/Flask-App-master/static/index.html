@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hog</title>
+  </head>
+  <body>
+    <div id="waiting">
+      Waiting for other player
+    </div>
+
+    <div id="gameContent" style="display: none;">
+      <center>
+      <span id="p1" >
+        <span id="player0"></span>: <span id="score0"></span>
+      </span>
+      <span id="p2">
+        <span id="player1"></span>: <span id="score1"></span>
+      </span>
+      <br>
+
+
+      Roll: <input type="number" id="diceNumber"></input>
+      <button id="roll" onclick="rollDice()">Roll!</button>
+      <div id="winner"></div>
+      <center>
+    </div>
+    <script src="/static/jquery-1.11.1.min.js"></script>
+    <script src="/static/game.js"></script>
+  </body>
+</html>
